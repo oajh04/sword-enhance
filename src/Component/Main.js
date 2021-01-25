@@ -9,11 +9,7 @@ const Main = () => {
         {
             "money": 1000000,
             "item" : {
-                "some": "asded",
-                "sosdme": "asdedd",
-                "sosme": "asddsed",
-                "somdfe": "asdded",
-                "somdse": "asdded",
+                "prevent": 0, //방지권
             }
         }
 
@@ -132,6 +128,18 @@ const Main = () => {
             "probability": 0.5,
             "probabmoney": 500000,
             "sellmoney": 30000000,
+        },
+        {
+            "some": "19강",
+            "probability": 0.45,
+            "probabmoney": 1000000,
+            "sellmoney": 100000000,
+        },
+        {
+            "some": "20강",
+            "probability": 0.4,
+            "probabmoney": 2000000,
+            "sellmoney": 400000000,
         },
     ]
     
