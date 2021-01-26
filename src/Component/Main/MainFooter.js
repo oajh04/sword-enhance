@@ -5,12 +5,12 @@ const MainFooter = () => {
     return (
         <>
             <S.EnhanceFooter>
-                <S.FooterRigth>
+                <S.FooterBox>
                     판매하기
-                </S.FooterRigth>
-                <S.FooterLeft>
+                </S.FooterBox>
+                <S.FooterBox>
                     강화하기
-                </S.FooterLeft>
+                </S.FooterBox>
             </S.EnhanceFooter>
         </>
     )
