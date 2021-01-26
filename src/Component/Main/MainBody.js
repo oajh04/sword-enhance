@@ -5,17 +5,17 @@ const MainBody = () => {
     return (
         <>
             <S.EnhanceBody>
-                <S.BodyRight>
+                <S.BodySub>
                     판매가격
                     강화가격
-                </S.BodyRight>
-                <S.BodyCenter>
+                </S.BodySub>
+                <S.BodyContent>
                     이미지
                     강화확률 : 70%
-                </S.BodyCenter>
-                <S.BodyLeft>
+                </S.BodyContent>
+                <S.BodySub>
                     아이템 목록
-                </S.BodyLeft>
+                </S.BodySub>
             </S.EnhanceBody>
         </>
     )
