@@ -9,7 +9,6 @@ export const ModalBorder = styled.div`
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
-    visibility: ${({ visibility }) => visibility};
 
     * {
         margin: 0;
@@ -19,10 +18,10 @@ export const ModalBorder = styled.div`
 `
 
 export const StoreModal = styled.div`
-    transition: all 0.8s;
     box-shadow: 8px 10px 30px 0 rgba(0, 0, 0, 0.16);
     overflow: hidden;
-    width: 350px;
+    width: 900px;
+    height: 600px;
     border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: #ffffff;
