@@ -36,11 +36,33 @@ export const HeaderLeft = styled.div`
 
 export const EnhanceBody = styled.div`
     height: 400px;
+    display: flex;
 `
+
+export const BodyRight = styled.div`
+    width: 200px;
+`;
+
+export const BodyCenter = styled.div`
+    width: 500px;
+`;
+
+export const BodyLeft = styled.div`
+    width: 200px;
+`;
 
 export const EnhanceFooter = styled.div`
     height: 100px;
+    display: flex;
 `
+
+export const FooterRigth = styled.div`
+    width: 50%;
+`;
+
+export const FooterLeft = styled.div`
+    width: 50%;
+`;
 
 // export const Enhance = styled.div`
 // `
