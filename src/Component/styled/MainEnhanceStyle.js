@@ -21,16 +21,7 @@ export const EnhanceHeader = styled.div`
     display: flex;
 `
 
-export const HeaderRigth = styled.div`
-    width: 300px;
-`
-
-export const HeaderCenter = styled.div`
-    width: 300px;
-    text-align: center;
-`
-
-export const HeaderLeft = styled.div`
+export const HeaderBox = styled.div`
     width: 300px;
 `
 
@@ -39,16 +30,12 @@ export const EnhanceBody = styled.div`
     display: flex;
 `
 
-export const BodyRight = styled.div`
+export const BodySub = styled.div`
     width: 200px;
 `;
 
-export const BodyCenter = styled.div`
+export const BodyContent = styled.div`
     width: 500px;
-`;
-
-export const BodyLeft = styled.div`
-    width: 200px;
 `;
 
 export const EnhanceFooter = styled.div`
@@ -56,11 +43,7 @@ export const EnhanceFooter = styled.div`
     display: flex;
 `
 
-export const FooterRigth = styled.div`
-    width: 50%;
-`;
-
-export const FooterLeft = styled.div`
+export const FooterBox = styled.div`
     width: 50%;
 `;
 
