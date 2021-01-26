@@ -1,13 +1,13 @@
 import React from 'react';
 import * as S from '../styled/MainEnhanceStyle';
 
-const MainHeader = () => {
+const MainHeader = ({onOpenModal, onCloseModal}) => {
 
     return (
         <>
             <S.EnhanceHeader>
                     <S.HeaderBox>
-                        상점
+                        <div onClick={onOpenModal}>상점</div>
                     </S.HeaderBox>
                     <S.HeaderBox>
                         검 강화하기
