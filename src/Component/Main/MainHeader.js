@@ -6,15 +6,15 @@ const MainHeader = () => {
     return (
         <>
             <S.EnhanceHeader>
-                    <S.HeaderRigth>
+                    <S.HeaderBox>
                         상점
-                    </S.HeaderRigth>
-                    <S.HeaderCenter>
+                    </S.HeaderBox>
+                    <S.HeaderBox>
                         검 강화하기
-                    </S.HeaderCenter>
-                    <S.HeaderLeft>
+                    </S.HeaderBox>
+                    <S.HeaderBox>
                         소지 금액 : 1000000
-                    </S.HeaderLeft>
+                    </S.HeaderBox>
                 </S.EnhanceHeader>
         </>
     )
