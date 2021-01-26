@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import MoneyModel from './MoneyModul';
+import * as S from '../styled/MainEnhanceStyle'
+import Header from './MainHeader';
+import Body from './MainBody';
+import Footer from './MainFooter';
+//import MoneyModel from './MoneyModul';
 
-const Main = () => {
+const MainEnhance = () => {
     const [ count, setCount ] = useState(0);
     const [ money, setMoney ] = useState(1000000);
 
@@ -12,7 +16,6 @@ const Main = () => {
                 "prevent": 0, //방지권
             }
         }
-
 
     const enhance = [
         {
@@ -163,14 +166,18 @@ const Main = () => {
     }
   
     return (
-      <div>
-            <div>{enhance[count].some}</div>
-            <div>{money}</div>
-            <div onClick={sell}>판매</div>
-            <div> 확률 {enhance[count].probability * 100}%</div>
-            <button onClick={coinThrow}>강화</button>
-      </div>
+      <>
+        <S.MainEnhanceBorder>
+            <S.EnhanceAll>
+
+                <Header />
+                <Body />
+                <Footer />
+
+            </S.EnhanceAll>
+        </S.MainEnhanceBorder>
+      </>
     );
 }
 
-export default Main
+export default MainEnhance;
