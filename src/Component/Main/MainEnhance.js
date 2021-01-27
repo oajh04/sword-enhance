@@ -6,6 +6,7 @@ import Footer from './MainFooter';
 import StoreModal from '../Modal/StoreModal';
 import { useSelector, useDispatch } from 'react-redux';
 import { openmodal, closemodal } from '../modules/StoreModule';
+import { itemEnhance } from '../modules/MyProfileModule';
 //import MoneyModel from './MoneyModul';
 
 const MainEnhance = () => {
@@ -19,6 +20,10 @@ const MainEnhance = () => {
         dispatch(closemodal());
     };
 
+    const onEnhance = () => {
+        dispatch(itemEnhance({money: 10000}));
+    }
+
     const showmodal = ReduxResult.StoreModule;
 
     console.log(showmodal)
@@ -31,7 +36,7 @@ const MainEnhance = () => {
 
                 <Header onOpenModal={onOpenModal} onCloseModal={onCloseModal}/>
                 <Body />
-                <Footer />
+                <Footer onEnhance={onEnhance}/>
 
             </S.EnhanceAll>
             
