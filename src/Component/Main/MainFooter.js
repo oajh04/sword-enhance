@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../styled/MainEnhanceStyle';
 
-const MainFooter = () => {
+const MainFooter = ({onEnhance}) => {
     return (
         <>
             <S.EnhanceFooter>
@@ -9,7 +9,7 @@ const MainFooter = () => {
                     판매하기
                 </S.FooterBox>
                 <S.FooterBox>
-                    강화하기
+                    <div onClick={onEnhance}>강화하기</div>
                 </S.FooterBox>
             </S.EnhanceFooter>
         </>
