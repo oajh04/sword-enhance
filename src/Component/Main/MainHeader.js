@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from '../styled/MainEnhanceStyle';
+import StoreModal from '../Modal/StoreModal';
+import { useSelector, useDispatch } from 'react-redux';
+import { openmodal, closemodal } from '../modules/StoreModule';
 
-const MainHeader = ({onOpenModal, onCloseModal}) => {
+const MainHeader = () => {
+    const ReduxResult = useSelector(state => state)
+    const dispatch = useDispatch();
+
+    const showmodal = ReduxResult.StoreModule;
+    const myProfile = ReduxResult.MyProfileModule;
+
+    const onOpenModal = () => {
+        dispatch(openmodal());
+    };
 
     return (
         <>
@@ -13,7 +25,9 @@ const MainHeader = ({onOpenModal, onCloseModal}) => {
                         검 강화하기
                     </S.HeaderBox>
                     <S.HeaderBox>
-                        소지 금액 : 1000000
+                        
+                        소지 금액 : {myProfile.money}
+                        
                     </S.HeaderBox>
                 </S.EnhanceHeader>
         </>
