@@ -15,4 +15,4 @@ export default function showmodal(state = initialState, action) {
       default:
         return state;
     }
-  }
+}
