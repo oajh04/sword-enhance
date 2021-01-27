@@ -13,20 +13,17 @@ const MainEnhance = () => {
     const ReduxResult = useSelector(state => state)
     const dispatch = useDispatch();
 
+    const showmodal = ReduxResult.StoreModule;
+    const Profile = ReduxResult.MyProfileModule;
+
+    console.log(Profile)
+
     const onOpenModal = () => {
         dispatch(openmodal());
     };
     const onCloseModal = () => {
         dispatch(closemodal());
     };
-
-    const onEnhance = () => {
-        dispatch(itemEnhance({money: 10000}));
-    }
-
-    const showmodal = ReduxResult.StoreModule;
-
-    console.log(showmodal)
 
     return (
       <>
@@ -35,8 +32,8 @@ const MainEnhance = () => {
             <S.EnhanceAll>
 
                 <Header onOpenModal={onOpenModal} onCloseModal={onCloseModal}/>
-                <Body />
-                <Footer onEnhance={onEnhance}/>
+                <Body profile={Profile}/>
+                <Footer />
 
             </S.EnhanceAll>
             
