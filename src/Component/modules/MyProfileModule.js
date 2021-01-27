@@ -17,7 +17,6 @@ const initialState = {
 }
 
 export default function myprofile(state = initialState, action){
-    console.log(action)
     switch(action.type){
         case ITEMENHANCE:
             return state.money - action.enhanceMoney;
