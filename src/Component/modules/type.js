@@ -1,0 +1,6 @@
+export const ENHANCESUCCESS = 'ENHACNESUCCESS';
+export const ENHANCEFAIL = 'ENHANCEFAIL';
+export const ITEMENHANCE = 'ITEMENHANCE';
+export const ITEMSELL = 'ITEMSELL';
+export const OPENMODAL = 'OPENMODAL';
+export const CLOSEMODAL = 'CLOSEMODAL';
