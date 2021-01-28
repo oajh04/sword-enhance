@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from '../styled/MainEnhanceStyle';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -7,7 +7,9 @@ const MainBody = () => {
     const dispatch = useDispatch();
 
     const myProfile = ReduxResult.MyProfileModule;
-    const Enhance = ReduxResult.EnhanceModule[0];
+    const Enhanced = ReduxResult.EnhanceModule[0];
+
+    const [ Enhance, setEnhance ] = useState(Enhanced)
 
     console.log(Enhance)
 
@@ -20,6 +22,7 @@ const MainBody = () => {
                 </S.BodySub>
                 <S.BodyContent>
                     이미지 <br />
+                    {Enhance.some}<br/>
                     강화확률 : {Enhance.probability * 100}%
                 </S.BodyContent>
                 <S.BodySub>
