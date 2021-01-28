@@ -1,5 +1,4 @@
-const ITEMENHANCE = 'ITEMENHANCE';
-const ITEMSELL = 'ITEMSELL';
+import { ITEMENHANCE, ITEMSELL } from './type';
 
 export const itemEnhance = (e) => ({
     type: ITEMENHANCE, 
