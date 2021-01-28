@@ -27,17 +27,17 @@ const MainFooter = () => {
     }
 
     const onEnhanceStart = () => {
-        // if(myProfile.money > Enhance.probabmoney){
-        //     if(Math.random() < Enhance.probability){
-        //         console.log()
-        //         onEnhanceSuccess()
-        //     }
-        //     else{
-        //         onEnhanceFail()
-        //     }
-        //     onMoneyMius(Enhance.probabmoney)
-        // }
-        onEnhanceSuccess()
+        console.log(myProfile.money, Enhance.probabmoney)
+        if(myProfile.money > Enhance.probabmoney){
+            if(Math.random() < Enhance.probability){
+                console.log()
+                onEnhanceSuccess()
+            }
+            else{
+                onEnhanceFail()
+            }
+            onMoneyMius(Enhance.probabmoney)
+        }
     }
 
     const onItemSell = () => {
