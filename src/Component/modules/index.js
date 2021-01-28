@@ -7,6 +7,6 @@ const rootReducer = combineReducers({
     StoreModule, 
     MyProfileModule,
     EnhanceModule,
-});
+ });
 
 export default rootReducer;
