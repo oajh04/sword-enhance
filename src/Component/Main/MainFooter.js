@@ -9,33 +9,35 @@ const MainFooter = () => {
     const dispatch = useDispatch();
 
     const myProfile = ReduxResult.MyProfileModule;
-    const Enhance = ReduxResult.EnhanceModule;
+    const Enhance = ReduxResult.EnhanceModule[0];
 
     console.log(Enhance)
 
     const onEnhanceSuccess = () => {
-        dispatch(enhanceSuccess());
+        dispatch(enhanceSuccess(1));
     };
     const onEnhanceFail = () => {
         dispatch(enhanceFail());
     };
     const onMoneyMius = (e) => {
-        itemEnhance({money: e})
+        dispatch(itemEnhance({money: e}))
     }
     const onMoneyPlus = (e) => {
-        itemSell({money: e})
+        dispatch(itemSell({money: e}))
     }
 
     const onEnhanceStart = () => {
-        if(myProfile.money > Enhance.probabmoney){
-            if(Math.random() < Enhance.probability){
-                onEnhanceSuccess()
-            }
-            else{
-                onEnhanceFail()
-            }
-            onMoneyMius(Enhance.probabmoney)
-        }
+        // if(myProfile.money > Enhance.probabmoney){
+        //     if(Math.random() < Enhance.probability){
+        //         console.log()
+        //         onEnhanceSuccess()
+        //     }
+        //     else{
+        //         onEnhanceFail()
+        //     }
+        //     onMoneyMius(Enhance.probabmoney)
+        // }
+        onEnhanceSuccess()
     }
 
     const onItemSell = () => {
