@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Main from './Component/Main';
+import MainEnhance from './Component/Main/MainEnhance';
 
 function App() {
   return (
     <>
-      <Main />
+      <MainEnhance />
     </>
   )
 }
