@@ -1,5 +1,4 @@
-const OPENMODAL = 'OPENMODAL';
-const CLOSEMODAL = 'CLOSEMODAL';
+import { OPENMODAL, CLOSEMODAL } from './type';
 
 export const openmodal = () => ({ type: OPENMODAL});
 export const closemodal = () => ({ type: CLOSEMODAL });
