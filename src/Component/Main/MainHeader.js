@@ -11,6 +11,9 @@ const MainHeader = () => {
     const showmodal = ReduxResult.StoreModule;
     const myProfile = ReduxResult.MyProfileModule;
 
+    const [ money, setMoney ] = useState(myProfile)
+    console.log(money)
+
     const onOpenModal = () => {
         dispatch(openmodal());
     };
@@ -26,7 +29,7 @@ const MainHeader = () => {
                     </S.HeaderBox>
                     <S.HeaderBox>
                         
-                        소지 금액 : {myProfile.money}
+                        소지 금액 : {money.money}
                         
                     </S.HeaderBox>
                 </S.EnhanceHeader>
