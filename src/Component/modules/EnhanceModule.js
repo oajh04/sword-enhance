@@ -158,7 +158,7 @@ export default function enhance(state = initialState, action){
         case ENHANCESUCCESS:
             return state.filter(en => en.id === action.id);
         case ENHANCEFAIL: 
-            return state;
+            return state.filter(en => en.id === 0);
         default:
             return state.filter(en => en.id === 0);
     }
