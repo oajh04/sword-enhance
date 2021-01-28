@@ -7,7 +7,9 @@ const MainBody = () => {
     const dispatch = useDispatch();
 
     const myProfile = ReduxResult.MyProfileModule;
-    const Enhance = ReduxResult.EnhanceModule;
+    const Enhance = ReduxResult.EnhanceModule[0];
+
+    console.log(Enhance)
 
     return (
         <>
