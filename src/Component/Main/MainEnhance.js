@@ -6,8 +6,6 @@ import Footer from './MainFooter';
 import StoreModal from '../Modal/StoreModal';
 import { useSelector, useDispatch } from 'react-redux';
 import { openmodal, closemodal } from '../modules/StoreModule';
-import { itemEnhance } from '../modules/MyProfileModule';
-//import MoneyModel from './MoneyModul';
 
 const MainEnhance = () => {
     const ReduxResult = useSelector(state => state)
@@ -15,8 +13,6 @@ const MainEnhance = () => {
 
     const showmodal = ReduxResult.StoreModule;
     const Profile = ReduxResult.MyProfileModule;
-
-    console.log(Profile)
 
     const onOpenModal = () => {
         dispatch(openmodal());
